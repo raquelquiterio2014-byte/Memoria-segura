@@ -1,2 +1,2 @@
 # Memoria-segura
-Projeto BackEnd para curso oferecido pelo Instituto Federal São Paulo  Campus Campinas
+Projeto BackEnd em Java para Sistema de Apoio ao Cuidado de Idosos. 
