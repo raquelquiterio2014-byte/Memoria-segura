@@ -41,7 +41,7 @@ Scanner
 
 menu no console
 
-Versão ideal para apresentar na faculdade
+
 
 Menu Principal 
 
