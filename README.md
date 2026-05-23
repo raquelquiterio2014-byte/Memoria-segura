@@ -62,34 +62,51 @@ src/
 - Java 11+
 - IDE (IntelliJ, Eclipse ou VS Code)
 
+---
 
 📋 Regras de Negócio
+
 Cada idoso pode ter múltiplos medicamentos
+
 Um medicamento pode ter vários horários
+
 Alertas são baseados no horário atual do sistema
+
 Não são permitidos horários inválidos ou vazios
 
 
 🛠️ Tecnologias Utilizadas
+
 ☕ Java (POO)
+
 📦 Java Collections (List, Map)
+
 ⏱️ Scheduler / Timer (opcional)
+
 💻 Aplicação em console (CLI)
 
-
 📈 Melhorias Futuras
-🖥️ Interface gráfica (JavaFX / Swing)
-🗄️ Persistência em banco de dados (MySQL / SQLite)
-📱 Versão mobile
-🔔 Notificações em tempo real
-📊 Relatórios de adesão ao tratamento
 
+🖥️ Interface gráfica (JavaFX / Swing)
+
+🗄️ Persistência em banco de dados (MySQL / SQLite)
+
+📱 Versão mobile
+
+🔔 Notificações em tempo real
+
+📊 Relatórios de adesão ao tratamento
 
 👨‍💻 Autor
 
-Projeto acadêmico desenvolvido para estudo de Programação de Java Orientada a Objetos aplicada à área da saúde.
+Projeto acadêmico desenvolvido para estudo de Programação Orientada a Objetos aplicada à área da saúde.
 
 📄 Licença
 
 Este projeto está sob a licença MIT.
+
+
+
+
+
 
