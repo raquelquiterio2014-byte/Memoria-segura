@@ -62,20 +62,6 @@ src/
 - Java 11+
 - IDE (IntelliJ, Eclipse ou VS Code)
 
-### ▶️ Execução
-```bash
-# Clonar repositório
-git clone https://github.com/seu-usuario/sistema-idosos.git
-
-# Entrar no diretório
-cd sistema-idosos
-
-# Compilar
-javac main/Main.java
-
-# Executar
-java main.Main
-
 
 📋 Regras de Negócio
 Cada idoso pode ter múltiplos medicamentos
