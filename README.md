@@ -1,112 +1,13 @@
-# Memoria-segura
-Projeto BackEnd em Java para Sistema de Apoio ao Cuidado de Idosos. 
+# Memória Segura — módulos acadêmicos
 
-# 👴👵 Sistema de Apoio a Idosos
-Sistema em Java para apoio ao cuidado de idosos, com foco em controle de medicamentos, agenda de atividades e alertas baseados em horários.
+Coleção de exercícios e protótipos de um sistema de apoio à rotina de cuidados com idosos. Há módulos Java independentes em `projeto-java/` (agenda, alerta de medicamento, cadastro, comunicação, painéis e registro de ocorrências) e um protótipo de front-end. **Não há um único aplicativo integrado nem um build na raiz.**
 
+## Estrutura
 
-## 📌 Sobre o Projeto
-O **Sistema de Apoio a Idosos** foi desenvolvido para facilitar o acompanhamento diário de idosos, permitindo organizar:
+Cada pasta de `projeto-java/` possui seu próprio conjunto de classes e, em vários casos, um `Main.java` e notas locais. Algumas classes têm o mesmo nome em módulos diferentes; compile cada pasta separadamente, não todos os arquivos juntos.
 
-- 💊 Medicamentos e dosagens  
-- ⏰ Horários de administração  
-- 📋 Atividades diárias  
-- 🔔 Alertas automáticos baseados em tempo  
+Exemplo de módulo a explorar: `projeto-java/Agenda de Atividades/`, com `Main.java`, `Atividade.java` e `StatusAtividade.java`. Com um JDK instalado, entre nessa pasta e use `javac *.java` e `java Main`. A compilação Java não foi executada nesta revisão porque o ambiente de verificação não tem `javac`.
 
-O objetivo é tornar a rotina mais segura, organizada e previsível.
+## Limites
 
----
-
-## ⚙️ Funcionalidades
-
-### 💊 Medicamentos
-- Cadastro de medicamentos
-- Definição de dosagem
-- Configuração de horários
-- Listagem de medicamentos cadastrados
-
-### ⏰ Agenda
-- Organização de rotina diária
-- Associação de atividades por horário
-- Visualização simplificada da programação
-
-### 🔔 Alertas
-- Notificações baseadas em horário atual
-- Verificação automática de medicamentos pendentes
-- Exibição de mensagens no console
-
----
-
-## 🧱 Arquitetura do Projeto
-
-src/
-├── model/
-│ ├── Idoso.java
-│ ├── Medicamento.java
-│ ├── Atividade.java
-│
-├── service/
-│ ├── MedicamentoService.java
-│ ├── AgendaService.java
-│ ├── AlertaService.java
-│
-├── main/
-│ ├── Main.java
-
-
----
-
-## 🚀 Como Executar
-
-### 🔧 Pré-requisitos
-- Java 11+
-- IDE (IntelliJ, Eclipse ou VS Code)
-
----
-
-📋 Regras de Negócio
-
-Cada idoso pode ter múltiplos medicamentos
-
-Um medicamento pode ter vários horários
-
-Alertas são baseados no horário atual do sistema
-
-Não são permitidos horários inválidos ou vazios
-
-
-🛠️ Tecnologias Utilizadas
-
-☕ Java (POO)
-
-📦 Java Collections (List, Map)
-
-⏱️ Scheduler / Timer (opcional)
-
-💻 Aplicação em console (CLI)
-
-📈 Melhorias Futuras
-
-🖥️ Interface gráfica (JavaFX / Swing)
-
-🗄️ Persistência em banco de dados (MySQL / SQLite)
-
-📱 Versão mobile
-
-🔔 Notificações em tempo real
-
-📊 Relatórios de adesão ao tratamento
-
-👨‍💻 Autor
-
-Projeto acadêmico desenvolvido para estudo de Programação Orientada a Objetos aplicada à área da saúde.
-
-📄 Licença
-
-Este projeto está sob a licença MIT.
-
-
-
-
-
-
+Os módulos são estudos de programação orientada a objetos. Não são um sistema clínico, não demonstram persistência compartilhada ou notificações médicas confiáveis. O documento Word na raiz registra a documentação acadêmica. Use dados fictícios ao demonstrar o projeto. Licença: consulte `LICENSE`.
