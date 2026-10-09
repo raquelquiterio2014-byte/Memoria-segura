@@ -1,12 +1,21 @@
-fetch("http://localhost:8080/api/dashboard")
-.then(res => res.json())
-.then(data => {
+const campos = ["medicamentos", "rotina", "ocorrencias", "alertas", "mensagens", "relatorio"];
 
-    document.getElementById("medicamentos").innerText = data.medicamentos;
-    document.getElementById("rotina").innerText = data.rotina;
-    document.getElementById("ocorrencias").innerText = data.ocorrencias;
-    document.getElementById("alertas").innerText = data.alertas;
-    document.getElementById("mensagens").innerText = data.mensagens;
-    document.getElementById("relatorio").innerText = data.relatorio;
+async function carregarDashboard() {
+    try {
+        const resposta = await fetch("http://localhost:8080/api/dashboard");
+        if (!resposta.ok) throw new Error("HTTP " + resposta.status);
+        const dados = await resposta.json();
+        for (const campo of campos) {
+            document.getElementById(campo).textContent = dados[campo] ?? "Sem dados disponíveis.";
+        }
+        document.getElementById("status-api").textContent = "Dados recebidos da API local.";
+    } catch (erro) {
+        document.getElementById("status-api").textContent =
+            "API local indisponível. Este repositório contém somente o protótipo visual; o backend não está incluído.";
+        for (const campo of campos) {
+            document.getElementById(campo).textContent = "Dados indisponíveis — conexão com a API necessária.";
+        }
+    }
+}
 
-});
+carregarDashboard();

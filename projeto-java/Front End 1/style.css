@@ -45,3 +45,10 @@ body {
 .card h3 {
     margin-bottom: 10px;
 }
+
+#status-api { grid-column: 1 / -1; }
+@media (max-width: 900px) {
+    .dashboard { grid-template-columns: 1fr; box-sizing: border-box; }
+    .container { flex-direction: column; }
+    .sidebar { width: auto; }
+}
