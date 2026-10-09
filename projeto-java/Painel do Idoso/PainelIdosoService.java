@@ -58,6 +58,6 @@ public class PainelIdosoService {
     // 🆘 CHAMAR AJUDA
     public void chamarAjuda() {
         System.out.println("\n🚨 AJUDA SOLICITADA!");
-        System.out.println("Um cuidador será notificado.");
+        System.out.println("Simulação no console: nenhuma notificação externa foi enviada.");
     }
 }
